@@ -11,6 +11,11 @@ body{
     font-family: "REM", sans-serif;
 }
 
+.navbar{
+  display: flex;
+  justify-content:center;
+}
+
 
 .navbar ul {
     display: flex;
@@ -28,6 +33,10 @@ body{
     color: var(--white);
   }
 
+  .navbar ul li a:hover{
+    color: var(--red)
+  }
+
   .hamburger-menu{
     display: none;
   }
@@ -36,6 +45,12 @@ body{
   
   /* Estilos para pantallas pequeñas */
   @media screen and (max-width: 767px) {
+
+    .navbar{
+      display: flex;
+      justify-content:end;
+    }
+
     .navbar ul {
       display: none;
     }
@@ -55,8 +70,9 @@ body{
     .navbar.collapsed li {
       margin: 10px 0;
     }
-  
+
     .hamburger-menu {
       display: block;
     }
+  
   }
