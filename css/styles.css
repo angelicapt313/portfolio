@@ -1,0 +1,62 @@
+:root {
+  --black: #1b1b1b;
+  --medium-gray: #2d2d2d;
+  --light-gray: #878787;
+  --red: #bb3637;
+  --white: #ffffff;
+}
+
+body{
+    background-color: var(--black);
+    font-family: "REM", sans-serif;
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    background-color: transparent;
+    
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+
+  .navbar ul a{
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .hamburger-menu{
+    display: none;
+  }
+
+  
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 767px) {
+    .navbar ul {
+      display: none;
+    }
+  
+    .navbar.collapsed ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-evenly;
+      position: fixed;
+      inset: 60px 0 0;
+      background-color: var(--black);
+      z-index: 1;
+      padding: 0;
+    }
+  
+    .navbar.collapsed li {
+      margin: 10px 0;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  }
