@@ -9,6 +9,7 @@
 body{
     background-color: var(--black);
     font-family: "REM", sans-serif;
+    color: var(--white);
 }
 
 .navbar{
@@ -39,6 +40,42 @@ body{
 
   .hamburger-menu{
     display: none;
+  }
+
+  .home .text{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .home .hello{
+    color: var(--light-gray);
+    
+  }
+
+  .home .developer{
+    color: var(--red);
+  }
+
+  .text.developer:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    border-left: 2px solid var(--red);
+    animation: animate 4s steps(12) infinite;
+  }
+
+  @keyframes animate {
+    40%, 60%{
+      left: calc(100% + 4px);
+    }
+    100%{
+      left: 0;
+    }
   }
 
   

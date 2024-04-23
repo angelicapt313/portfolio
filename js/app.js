@@ -1,6 +1,4 @@
 
-  
-
   // Obtener referencia al botón de menú de hamburguesa y a la barra de navegación
   const hamburgerMenu = document.getElementById('hamburger-menu');
   const navbar = document.getElementById('navbar');
