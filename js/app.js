@@ -1,13 +1,15 @@
 
   // Obtener referencia al botón de menú de hamburguesa y a la barra de navegación
-  const hamburgerMenu = document.getElementById('hamburger-menu');
-  const navbar = document.getElementById('navbar');
+  const hamburgerMenu = document.querySelector('#hamburger-menu');
+  const navbar = document.querySelector('.navbar');
+  
   
   // Agregar un listener para el evento click al botón de menú
   hamburgerMenu.addEventListener('click', function() {
     // Alternar la clase "collapsed" en la barra de navegación
     navbar.classList.toggle('collapsed');
-  });
+
+  })
   
   // Añadir un listener para el evento resize de la ventana
   window.addEventListener('resize', function() {
